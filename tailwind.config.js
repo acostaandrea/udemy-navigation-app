@@ -15,7 +15,7 @@ module.exports = {
           100: '#C51297',
           200: '#831266',
         },
-        terciary: '#ef2967',
+        tertiary: '#ef2967',
 
       },
       fontFamily:{
