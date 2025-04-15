@@ -2,23 +2,23 @@ import { View, Text } from "react-native";
 import React from "react";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Link, router } from "expo-router";
-import CustomButton from "../../../components/shared/CustomButton";
+import CustomButton from "@/components/shared/CustomButton";
 
 const HomeScreen = () => {
   return (
     <SafeAreaView>
       <View className="px-10 mt-5">
        
-        <CustomButton className="mb-2" color="primary" onPress={() => router.push("/products")}>
+        <CustomButton className="mb-2" color="primary" onPress={() => router.push("/tabs/(stack)/products")}>
           Productos
         </CustomButton>
-        <CustomButton className="mb-2" color="secondary" onPress={() => router.push("/profile")}>
+        <CustomButton className="mb-2" color="secondary" onPress={() => router.push("/tabs/(stack)/profile")}>
           Perfil
         </CustomButton>
-        <CustomButton className="mb-2" color="tertiary" onPress={() => router.push("/settings")}>
+        <CustomButton className="mb-2" color="tertiary" onPress={() => router.push("/tabs/(stack)/settings")}>
           Ajustes
         </CustomButton>
-        <CustomButton className="mt-1" variant="text-only" onPress={() => router.push("/products")}>
+        <CustomButton className="mt-1" variant="text-only" onPress={() => router.push("/tabs/(stack)/products")}>
           Productos
         </CustomButton>
         {/* <Link href="/products" className="mb-5" asChild>
