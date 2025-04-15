@@ -9,6 +9,7 @@ const DrawerLayout = () => {
     <Drawer
     drawerContent={CustomDrawer}
     screenOptions={{
+      headerShown: false,
       overlayColor: 'rgba(0, 0, 0, 0.5)',
       drawerActiveTintColor: 'indigo',
       headerShadowVisible: false,
@@ -26,6 +27,20 @@ const DrawerLayout = () => {
         drawerIcon: ({color, size}) => (
           <Ionicons
           name="person-outline"
+          size={size}
+          color={color}
+          />
+        )
+        }}
+      />
+       <Drawer.Screen
+        name="tabs" // This is the name of the page and must match the url from root
+        options={{
+        drawerLabel: 'Tabs + Stack',
+        title: 'Tabs + Stack',
+        drawerIcon: ({color, size}) => (
+          <Ionicons
+          name="home-outline"
           size={size}
           color={color}
           />
