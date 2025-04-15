@@ -7,7 +7,13 @@ module.exports = {
     "./presentation/**/*.{js,jsx,ts,tsx}",],
   presets: [require("nativewind/preset")],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        'work-black': ['WorkSans-Black', 'sans-serif'],
+        'work-light': ['WorkSans-Light', 'sans-serif'],
+        'work-medium': ['WorkSans-Medium', 'sans-serif'],
+      }
+    },
   },
   plugins: [],
 }
